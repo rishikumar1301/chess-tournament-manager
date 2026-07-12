@@ -81,3 +81,4 @@ export async function deleteTournament(
 
 	return result.count > 0;
 }
+

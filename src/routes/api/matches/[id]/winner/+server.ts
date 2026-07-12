@@ -10,6 +10,7 @@ export const PUT: RequestHandler = async ({ params, request }) => {
 		const { winnerId } = await request.json();
 
 		await setWinner(matchId, winnerId);
+		
 
 		return json({
 			message: 'Winner updated successfully.'
